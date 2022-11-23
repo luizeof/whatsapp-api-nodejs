@@ -143,7 +143,7 @@ class WhatsAppInstance {
 
         // sending presence
         sock?.ev.on('presence.update', async (json) => {
-            await this.SendWebhook('presence', json, this.key)
+            //await this.SendWebhook('presence', json, this.key)
         })
 
         // on receive all chats
